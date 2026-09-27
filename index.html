@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sokous Guitar Course</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Poppins',sans-serif;
+            line-height:1.6;
+            color:#333;
+            background:#f7f8fa;
+        }
+
+        .hero{
+            min-height:100vh;
+            background:
+                linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+                url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1600&q=80');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content{
+            max-width:800px;
+        }
+
+        h1{
+            font-size:3.5rem;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:1.2rem;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#ff7a00;
+            color:white;
+            padding:14px 28px;
+            border-radius:8px;
+            text-decoration:none;
+            font-weight:600;
+        }
+
+        section{
+            padding:80px 20px;
+        }
+
+        .container{
+            max-width:1100px;
+            margin:auto;
+        }
+
+        .title{
+            text-align:center;
+            margin-bottom:50px;
+        }
+
+        .features{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 5px 20px rgba(0,0,0,.08);
+        }
+
+        .about{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:40px;
+            align-items:center;
+        }
+
+        .about img{
+            width:100%;
+            border-radius:12px;
+        }
+
+        .cta{
+            background:#111;
+            color:white;
+            text-align:center;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#000;
+            color:#bbb;
+        }
+
+        @media(max-width:768px){
+            h1{
+                font-size:2.4rem;
+            }
+
+            .about{
+                grid-template-columns:1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sokous Guitar Course</h1>
+            <p>
+                Learn guitar from beginner to advanced level with
+                structured lessons, practical exercises, and real songs.
+            </p>
+            #enrolEnrol Now</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="title">
+                <h2>Why Choose Sokous?</h2>
+            </div>
+
+            <div class="features">
+                <div class="card">
+                    <h3>Step-by-Step Training</h3>
+                    <p>Easy lessons designed for complete beginners.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Practical Exercises</h3>
+                    <p>
+                        Develop rhythm, technique, and confidence through
+                        hands-on practice.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Learn Real Songs</h3>
+                    <p>
+                        Apply your skills by playing popular songs and melodies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container about">
+
+            <img
+                src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?auto=format&fit=crop&w=900&q=80"
+                alt="Guitar student learning">
+
+            <div>
+                <h2>Master Guitar with Confidence</h2>
+
+                <p>
+                    The Sokous Guitar Course combines theory and practice
+                    to help students develop strong guitar fundamentals and
+                    performance skills.
+                </p>
+
+                <p>
+                    Suitable for beginners, hobbyists,
+                    worship musicians, and aspiring performers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="enrol">
+        <div class="container">
+            <h2>Start Your Guitar Journey Today</h2>
+
+            <p>
+                Join the Sokous Guitar Course and improve your skills
+                one lesson at a time.
+            </p>
+
+            <br>
+
+            info@sokous.com
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Sokous Guitar Course. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
