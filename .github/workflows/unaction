@@ -1,0 +1,15 @@
+name: my first githubaction
+
+on:
+  push:
+    branches:
+      - main
+
+jobs: 
+  print-text:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a greeting
+        run: echo "hello giwa"
+
