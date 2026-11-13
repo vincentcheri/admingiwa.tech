@@ -1,15 +1,35 @@
-name: my first github action
+name: mysite-ci-cd
 
 on:
   push:
     branches:
       - main
 
-jobs: 
-  print-text:
+  pull_reuests:
+    branches: [ main ]
+
+jobs:
+  test-php-code:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print a greeting
-        run: ls /
+      - name: check out code
+        uses: actions/checkout@v4
 
+      - name: setup php on runner
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - name: test for identation and syntax
+       run: php -l rand.php
+
+      - name: Deploy with SSH Passphrase
+        uses: fkwdigital/github-workflow-action-ubuntu-rsync@v1
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_PATH: '/var/www/admingiwa.tech/'
+          SOURCE: './'
