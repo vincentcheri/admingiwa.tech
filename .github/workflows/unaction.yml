@@ -32,5 +32,5 @@ jobs:
         SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        REMOTE_PATH: '/var/www/admingiwa.tech/'
+        REMOTE_PATH: '/var/www/admingiwa.tech/html'
         SOURCE: './'
