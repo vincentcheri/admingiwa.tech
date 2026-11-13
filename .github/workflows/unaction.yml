@@ -1,4 +1,4 @@
-name: mysite-ci-cd
+name: mysite-cicd
 
 on:
   push:
