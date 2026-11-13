@@ -4,6 +4,9 @@ on:
   push:
     branches:
     - main
+    paths-ignore:
+      - '**.md'
+      - '.github/**'
 
 jobs:
   test-php-code:
@@ -22,6 +25,7 @@ jobs:
       run: php -l rand.php
 
     - name: Deploy with SSH Passphrase
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       uses: fkwdigital/github-workflow-action-ubuntu-rsync@v1
       with:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
