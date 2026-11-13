@@ -19,7 +19,6 @@ Created a GitHub Actions workflow named `mysite-cicd`.
 The workflow is configured to trigger on:
 
 - Push events targeting the `main` branch.
-- Pull requests targeting the `main` branch.
 
 ### 2. Ubuntu Runner
 
