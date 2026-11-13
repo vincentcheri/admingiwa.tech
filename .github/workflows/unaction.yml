@@ -6,7 +6,7 @@ on:
       - main
 
   pull_reuests:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   test-php-code:
