@@ -6,7 +6,14 @@ on:
       - main
     paths-ignore:
       - '**.md'
-    #  - '.github/**'
+      - '.github/**'
+
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/**'
+      - '**.md'
 
   workflow_dispatch:
 
