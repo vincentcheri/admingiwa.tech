@@ -8,6 +8,8 @@ on:
       - '**.md'
     #  - '.github/**'
 
+  workflow_dispatch:
+
 jobs:
   test-php-code:
     runs-on: ubuntu-latest
